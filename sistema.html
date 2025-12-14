@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<button>Logout</button>
+</header>
+
+<div class="main-content">
+    <div class="container">
+        <h2>Novo Gasto</h2>
+        <input id="descricao" placeholder="Descrição">
+        <input id="valor" type="number" placeholder="Valor">
+        <input id="categoria" placeholder="Categoria">
+        <input id="data" type="date">
+        <button>Adicionar</button>
+    </div>
+    
+    <h3>Total: R$ <span id="total">0</span></h3>
+    <div id="lista"></div>
+    
+    <div class="grafico-container">
+        <h3>Gastos por Categoria</h3>
+        <canvas id="graficoCategorias"></canvas>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
